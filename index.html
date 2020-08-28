@@ -1,1 +1,414 @@
-Hello World
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel= "stylesheet" href = "style.css">
+    <title>Andrea Ha</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+  </head>
+  <body data-spy="scroll" data-target="#navbar-example2">
+
+    <!--- NAVBAR -->
+    <nav id="navbar-example2" class="navbar sticky-top navbar-light bg-white">
+      <a class="navbar-brand" href="#"><img src= "logo.png" style= "width: 5rem;"> </a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#About">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Awards">Awards</a>
+        </li>
+ 
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+
+      <!---JUMBOTRON-->
+      
+      <div class="jumbotron jumbotron-fluid" style="height:100vh;">
+        <div class="container">
+          
+        <center>
+            <a href="mailto:anha1229@gmail.com?subject= Love you website!">
+              <i class="fa fa-2x fa-envelope"></i></a>  
+            
+            <a href= "https://www.linkedin.com/in/andreakha/"> 
+              <i class="fa fa-2x fa-linkedin"></i></a>
+            
+            <a href= "https://github.com/AndreaHa29"> 
+              <i class="fa fa-2x fa-github"></i></a>
+            </center>
+          
+          <h1>Andrea Ha</h1>
+          <h2>
+            <span
+               class="txt-rotate"
+               data-period="2000"
+               data-rotate='[ "Student", "Web Developer", "Intern", "Software Engineer" ]'></span>
+          </h2>
+         
+          
+          <p class="lead"></p>
+
+          
+        </div>
+      </div>
+
+<!---TYPEWRITER EFFECT---------------------------------------------->
+    <script>var TxtRotate = function(el, toRotate, period) {
+      this.toRotate = toRotate;
+      this.el = el;
+      this.loopNum = 0;
+      this.period = parseInt(period, 10) || 2000;
+      this.txt = '';
+      this.tick();
+      this.isDeleting = false;
+    };
+    
+    TxtRotate.prototype.tick = function() {
+      var i = this.loopNum % this.toRotate.length;
+      var fullTxt = this.toRotate[i];
+    
+      if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+      }
+    
+      this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+    
+      var that = this;
+      var delta = 300 - Math.random() * 100;
+    
+      if (this.isDeleting) { delta /= 2; }
+    
+      if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+      } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+      }
+    
+      setTimeout(function() {
+        that.tick();
+      }, delta);
+    };
+    
+    window.onload = function() {
+      var elements = document.getElementsByClassName('txt-rotate');
+      for (var i=0; i<elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-rotate');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+          new TxtRotate(elements[i], JSON.parse(toRotate), period);
+        }
+      }
+      // INJECT CSS
+      var css = document.createElement("style");
+      css.type = "text/css";
+      css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+      document.body.appendChild(css);
+    };</script>
+
+    <!---ABOUT-->
+    <div id="About" style="background-color: #fafafa;" >
+    <h2>About Me</h2>
+    
+   <div class = "aboutRow ">
+      <div class="row">
+        <div class="col-lg-4" >
+          <img src="AndreaHa.JPEG" class= "img-fluid mx-auto d-block w-75 p-3 rounded-circle"alt="">
+        </div>
+      
+        
+        <div class="col-sm-4" >
+            <div class = "row">
+    <div>
+          <h4> <i class="material-icons md-32">school</i>  Education</h4>
+          <ul>
+
+            <li>University of Washington -- Seattle</li>
+            <li>B.S. in Computer Science</li>
+           
+          </ul>
+          </div>
+        </div>
+<br>
+<br>
+<div class = "row">
+
+          <h4> <span class="material-icons md-32"> class</span>  Coursework</h4> 
+          <ul>
+          <li>Intellectual Foundations of Informatics</li>
+          <li>Computer Programming II</li>
+          <li>Matrix Algebra with Applications</li>
+        </ul>
+        
+  
+    </div>
+          </div>
+          
+          <div class="col-sm-4" >
+
+            <div class = "row">
+      
+            <h4> <span class="material-icons md-32">folder_special</span>  Hobbies</h4>
+            
+            <ul>
+  
+              <li>Comic book design: Gift giving on a budget</li>
+              <li>Painting: Watercolor is my favorite medium </li>
+              <li>Hiking: Love the Franklin Ghost Town trail</li>
+              <li>Gardening: Currently growing tomatoes</li>
+            </ul>
+     
+        </div>
+  <br>       
+  <div class = "row">
+
+            <h4><span class="material-icons md-32"> audiotrack</span> Music Recomendation</h4>
+           
+           <ul>
+             <li>
+              <iframe src="https://open.spotify.com/embed/track/4FidnSkTNEEQLmPpueLPd7" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media">
+              </iframe>
+            </li>
+            </ul>
+
+      </div>
+            </div>
+          </div>
+        </div>
+         
+    </div>
+      
+<!--RESUME-->
+<div id="Experience">
+<h2>Experience</h2>
+<div class="container">
+
+        <div class="row">
+            <div class="col-lg-6 ">
+                
+                <!-- Timeline -->
+                <h3><marK> Professional </marK></h3>
+                <ul class="timeline">
+                   
+                    <li class="timeline-item bg-white ml-3 p-4">
+                        <div class="timeline-arrow"></div>
+                        <h4 class="h5 mb-0">Mount Locks</h4><span class="small text-gray">Front-end Development Intern | May 2020 - Present</span>
+                        <p>Building website w/ mobile-view and SEO optimization for smart lock start-up (Bootstrap, HTML, JavaScript, Firebase)
+
+                        <p> Developing customer-facing IOS and Android app to control and manage smart lock (Flutter, Dart)</p></p>
+                    </li>
+                    <li class="timeline-item bg-white ml-3 p-4">
+                      <div class="timeline-arrow"></div>
+                      <h4 class="h5 mb-0">Jane Street Capital</h4><span class="small text-gray">Women in STEM event attendee | July 2020</span>
+                      <p>1 of 97 students selected to explore computer science, math, and probability concepts in quantitative trading via competitions and workshops w/ Jane Street executives</p>
+                  </li>
+                    <li class="timeline-item bg-white ml-3 p-4">
+                        <div class="timeline-arrow"></div>
+                        <h4 class="h5 mb-0">Microsoft</h4><span class="small text-gray"></i>Software Engineer Intern | June - August 2019</span>
+                        <p>Built chat bot w/ Azure team databases to answer questions from new employees and improve onboarding efficiency</p>
+                        <p>Presented project to Microsoft executives including the GM of Azure Engineering</p>
+                        <p>Invited to speak about internship at Microsoft's Young Women Empowered (Y-WE) STEM exploration day</p>
+                    </li>
+                </ul><!-- End -->
+
+            </div>
+            <div class="col-lg-6 ">
+                
+              <!-- Timeline -->
+              <h3> <mark>Extracurriculars </mark> </h3>
+              <ul class="timeline">
+                  <li class="timeline-item bg-white ml-3 p-4 ">
+                      <div class="timeline-arrow"></div>
+                      <h4 class="h5 mb-0">STEMpowher</h4><span class="small text-gray">Co-Founder | August 2018 - Present</span>
+                      <p>Project empowering girls to pursue STEM through inspiring interview with female industry leaders and local STEM opportunities </p>
+                      <a href="https://stempowher.com"><img src = "STEMpowher.png" style="margin-left: -1%; padding-top: 50px; width: 400px;"> </a>
+                  </li>
+                  <li class="timeline-item bg-white ml-3 p-4 ">
+                      <div class="timeline-arrow"></div>
+                      <h4 class="h5 mb-0">Bellevue Breakfast Rotary Club</h4><span class="small text-gray"> Computer Network Technician | Feburary 2020 </span>
+                      <p>Set up computer labs and Wifi for 24 rural schools in Antigua and Barbuda</p>
+                      <p> Repaired over 50 laptops to send to students and configured Cisco routers, switches, and access points</p>
+                      
+                  </li>
+                  <li class="timeline-item bg-white ml-3 p-4 ">
+                    <div class="timeline-arrow"></div>
+                    <h4 class="h5 mb-0">Newport Robotics</h4><span class="small text-gray"> Co-President | September 2018 - June 2020 </span>
+                    <p>Led 80 member team in 5 subgroups: Programming, Computer-Aided Design, Electrical, Mechanical, and Business</p>
+                    <p> Raised over $15,000 through grants, fundraisers, and presentations at Microsoft and Google for sponsorships</p>
+                    
+                </li>
+
+              </ul><!-- End -->
+
+          </div>
+        </div>
+<!-- End -->
+
+<!--SKILLS -------->
+<div class="skills">
+  <h3> <mark>Skills </mark> </h3>
+<div class="row">
+  <div class="col-lg-6 ">
+    <p>HTML & Bootstrap/CSS</p>
+    <div class="progress">
+      <div class="progress-bar" style="width:100%"></div>
+    </div><br>
+  
+    <!-- Green -->
+    <p>Javascript</p>
+    <div class="progress">
+      <div class="progress-bar" style="width:50%"></div>
+    </div><br>
+  
+    <!-- Turquoise -->
+    <p>Java</p>
+    <div class="progress">
+      <div class="progress-bar" style="width:40%"></div>
+    </div><br>
+  </div>
+  <div class="col-lg-6 ">
+      
+    <!-- Timeline -->
+    <p>Git</p>
+    <div class="progress">
+      <div class="progress-bar" style="width:70%"></div>
+    </div><br>
+  
+    <!-- Green -->
+    <p>Flutter & Dart</p>
+    <div class="progress">
+      <div class="progress-bar" style="width:30%"></div>
+    </div><br>
+  
+    <!-- Turquoise -->
+    <p>Firebase</p>
+    <div class="progress">
+      <div class="progress-bar" style="width:60%"></div>
+    </div><br>
+
+
+</div>
+</div>
+</div>
+
+<!---AWARDS-->
+<div id="Awards">
+<h2>Awards </h2>
+
+
+
+
+<div class = "row d-flex justify-content-center">
+  
+  <div class = "col-lg-4">
+
+  <div class="card-body shadow">
+    <img src = "Comcast.png" style= "width: 4rem; padding-top:10%; padding-bottom: 10%;" class = "mx-auto d-block">
+    <h5 class="card-title">Comcast NBCUniversal Leaders & Achievers Scholarship</h5>
+    <p class="card-text">Awarded $2,500 for exemplary community service and leadership efforts.</p>
+
+
+</div>
+</div>
+
+<div class = "col-lg-4">
+
+  <div class="card-body shadow">
+    <img src = "microsoft.png" style= "width: 3rem; padding-top:10%; padding-bottom: 10%;" class = "mx-auto d-block">
+    <h5 class="card-title">Microsoft Mobility & Device Fundementals Certificate </h5>
+    <p class="card-text">Demonstrated knowledge of Windows devices, antimalware products, network topologies and devices.</p>
+
+</div>
+</div>
+
+<div class = "col-lg-4">
+
+  <div class="card-body shadow">
+    <img src = "first.png" style= "width: 4rem; padding-top:10%; padding-bottom: 10%;" class = "mx-auto d-block">
+    <h5 class="card-title">Finalists at Robotics World Championships</h5>
+    <p class="card-text">Competed against thousands of top FIRST teams to become Einstein Finalists in 2019.</p>
+
+</div>
+</div>
+
+</div>
+
+
+<br>
+
+<div class = "row d-flex justify-content-center">
+  
+  <div class = "col-lg-4">
+
+  <div class="card-body shadow">
+    <img src = "collegeboard.png" style= "width: 4rem; padding-top:10%; padding-bottom: 10%;" class = "mx-auto d-block">
+    <h5 class="card-title">AP Scholar with Distinction</h5>
+    <p class="card-text">Awarded to the top 4% of students nationwide for averaging above 3.5 for 5 or more AP exams.</p>
+    
+
+</div>
+</div>
+
+<div class = "col-lg-4">
+  <div class="card-body shadow">
+    <img src = "DECA.png" style= "width: 5rem; padding-top:10%; padding-bottom: 10%;" class = "mx-auto d-block">
+    <h5 class="card-title">Top 10 at DECA ICDC for Entreprenuership Team Decision Making</h5>
+    <p class="card-text">Competed against the top 1% of DECA students at Internationals and qualified for finals.</p>
+    
+</div>
+</div>
+
+<div class = "col-lg-4">
+
+  <div class="card-body shadow">
+    <img src = "Knight.jpg" style= "width: 5rem; padding-top:10%; padding-bottom: 10%;" class = "mx-auto d-block">
+    <h5 class="card-title">Newport Knight Valor</h5>
+    <p class="card-text">Awarded for contribruting over 140 hours of community service.</p>
+    
+</div>
+</div>
+</div>
+
+
+</div>
+
+</div>
+
+
+
+    
+<div class= "footer">
+  
+  Andrea Ha Portfolio
+
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/42b32c8166.js"></script>
+   
+  </body>
+</html>

@@ -1,0 +1,176 @@
+body {
+  position: relative;
+ 
+  
+}
+
+
+.aboutRow{
+  margin-left: 50px;
+  padding-right: 100px;
+}
+.fa-2x{
+  letter-spacing: 20px;
+  padding-top: 100px;
+ 
+}
+
+.card-body{
+ margin: 0 auto;
+ border: none;
+ min-height: 310px;
+ padding-left: 10%;
+
+}
+
+ul{
+  list-style: none;
+
+}
+
+mark {
+  background-color:#ffe4cf;
+  padding: 0px 40px 0px 10px;
+ 
+}
+.nav-link.active {
+  background-color: #d0eeed!important;
+  color: black !important;
+}
+
+.material-icons.md-32 { 
+  font-size: 32px; 
+  position: relative;
+  top: 5px;
+  color: #a2dcda;
+  left:-10px;
+}
+
+li{
+  line-height: 32px;
+}
+
+
+a{
+  color: black;
+}
+
+.jumbotron {
+  background: linear-gradient(to bottom left, white 0%, white 60%, #d0eeed 40%, #d0eeed 100%);
+  margin-bottom: 0 !important;
+  
+}
+
+.progress-bar{
+  background-color: #a2dcda;
+}
+
+.iframe{
+  width: 90%;
+}
+
+.display-4{
+  margin-top: 20%;
+  font-family: 'Jost', sans-serif;
+  font-size: 100px;
+
+}
+h2, h1{
+  text-align: center;
+  padding-bottom: 40px;
+  letter-spacing: 1.2px;
+  font-family: 'Jost', sans-serif;
+  padding-top: 70px;
+}
+h1{
+  font-size: 100px;
+  padding-top: 30px;
+
+}
+h3{
+  padding-bottom: 20px;
+  font-family: 'Jost', sans-serif;
+}
+
+p, h4, li, h5 {
+  font-family: 'Jost', sans-serif;
+}
+img{
+margin-left: 20%;
+
+}
+.nav-pills{
+  padding-left: 50px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .navbar-brand {
+    margin: 0 auto;
+  }
+  .navbar-link{
+    margin: 0 auto;
+  }
+}
+
+p{
+line-height: 23px;
+}
+
+.col-sm-3, .col-sm-4 {
+ margin: 0 auto;
+ padding-top: 15px;
+ padding-bottom: 80px;
+}
+
+.col {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+/* Timeline vertical line */
+ul.timeline:before {
+  content: ' ';
+  background: #d0eeed;
+  display: inline-block;
+  position: absolute;
+  left: 16px;
+  width: 4px;
+  height: 100%;
+  z-index: 400;
+  border-radius: 1rem;
+}
+
+
+li.timeline-item {
+  margin: 20px 0;
+
+}
+
+/* Timeline item circle marker */
+li.timeline-item::before {
+  content: ' ';
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #d0eeed;
+  left: 11px;
+  width: 14px;
+  height: 14px;
+  z-index: 400;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.footer{
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 75px;
+}
+
