@@ -1,108 +1,48 @@
+
 body {
   position: relative;
- 
-  
-}
-
-
-.aboutRow{
-  margin-left: 50px;
-  padding-right: 100px;
-}
-.fa-2x{
-  letter-spacing: 20px;
-  padding-top: 100px;
- 
-}
-
-.card-body{
- margin: 0 auto;
- border: none;
- min-height: 310px;
- padding-left: 10%;
+  overflow-x: hidden; 
 
 }
 
-ul{
+a, a:visited{
+  color: black;
+}
+
+li{
+  line-height: 32px;
   list-style: none;
-
 }
 
-mark {
-  background-color:#ffe4cf;
-  padding: 0px 40px 0px 10px;
- 
+h2, h1{
+  text-align: center;
+  padding-bottom: 40px;
+  letter-spacing: 1.2px;
+  padding-top: 130px;
 }
+
+h3{
+  padding-bottom: 20px;
+}
+
+p{
+  line-height: 23px;
+} 
+
+h1, h2, h3, h4, h5, h6, li, p {
+  font-family: 'Jost', sans-serif;
+}
+
+
+/*---------NAV------------*/
 .nav-link.active {
   background-color: #d0eeed!important;
   color: black !important;
 }
 
-.material-icons.md-32 { 
-  font-size: 32px; 
-  position: relative;
-  top: 5px;
-  color: #a2dcda;
-  left:-10px;
-}
-
-li{
-  line-height: 32px;
-}
-
-
-a{
-  color: black;
-}
-
-.jumbotron {
-  background: linear-gradient(to bottom left, white 0%, white 60%, #d0eeed 40%, #d0eeed 100%);
-  margin-bottom: 0 !important;
-  
-}
-
-.progress-bar{
-  background-color: #a2dcda;
-}
-
-.iframe{
-  width: 90%;
-}
-
-.display-4{
-  margin-top: 20%;
-  font-family: 'Jost', sans-serif;
-  font-size: 100px;
-
-}
-h2, h1{
-  text-align: center;
-  padding-bottom: 40px;
-  letter-spacing: 1.2px;
-  font-family: 'Jost', sans-serif;
-  padding-top: 70px;
-}
-h1{
-  font-size: 100px;
-  padding-top: 30px;
-
-}
-h3{
-  padding-bottom: 20px;
-  font-family: 'Jost', sans-serif;
-}
-
-p, h4, li, h5 {
-  font-family: 'Jost', sans-serif;
-}
-img{
-margin-left: 20%;
-
-}
 .nav-pills{
   padding-left: 50px;
 }
-
 
 @media only screen and (max-width: 600px) {
   .navbar-brand {
@@ -113,27 +53,61 @@ margin-left: 20%;
   }
 }
 
-p{
-line-height: 23px;
+
+/*-----HOME-----------*/
+
+.jumbotron {
+  background: linear-gradient(to bottom left, white 0%, white 60%, #d0eeed 40%, #d0eeed 100%);
+  height: 100vh;
+  margin-bottom: 0 !important;
+
 }
 
-.col-sm-3, .col-sm-4 {
+.fa-2x{
+  letter-spacing: 15px;
+  margin: 0 auto;
+}
+
+h1{
+  font-size: 100px;
+}
+
+h6{
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 1.2px;
+  padding-top: 0px;
+}
+/*-----------ABOUT------------*/
+
+.aboutRow{
+  margin-left: 50px;
+  padding-right: 100px;
+}
+
+.material-icons.md-32 { 
+  font-size: 32px; 
+  position: relative;
+  top: 5px;
+  color: #a2dcda;
+  left:-10px;
+}
+
+.col-sm-4 {
  margin: 0 auto;
  padding-top: 15px;
- padding-bottom: 80px;
+
 }
 
-.col {
-  margin-right: 10%;
-  margin-left: 10%;
-}
+/*-----------EXPERIENCES-----------*/
+
 ul.timeline {
   list-style-type: none;
   position: relative;
   padding-left: 1.5rem;
 }
 
-/* Timeline vertical line */
+/* experiences vertical line */
 ul.timeline:before {
   content: ' ';
   background: #d0eeed;
@@ -146,13 +120,7 @@ ul.timeline:before {
   border-radius: 1rem;
 }
 
-
-li.timeline-item {
-  margin: 20px 0;
-
-}
-
-/* Timeline item circle marker */
+/* experiences circle marker */
 li.timeline-item::before {
   content: ' ';
   background: white;
@@ -167,9 +135,42 @@ li.timeline-item::before {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
+.timeline img{
+  margin-left: -1%; 
+  padding-top: 10px; 
+  width: 18rem;
+}
+
+.timeline a img:hover{
+  -webkit-transform: scale(1.01);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+
+/* skills */
+
+.skills h3{
+  padding-top: 40px;
+}
+
+.progress-bar{
+  background-color: #a2dcda;
+}
+
+
+/*-------AWARDS---------*/
+
+.card-body{
+  margin: 0 auto;
+  border: none;
+  min-height: 310px;
+  padding-left: 10%;
+ }
+
+/*------FOOTER--------*/
 
 .footer{
-  text-align: center;
   padding-top: 100px;
   padding-bottom: 75px;
 }
