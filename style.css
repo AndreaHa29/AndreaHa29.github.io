@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6, li, p {
 
 .jumbotron {
   background: linear-gradient(to bottom left, white 0%, white 60%, #d0eeed 40%, #d0eeed 100%);
-  height: 100vh;
+  height: 85vh;
   margin-bottom: 0 !important;
 
 }
@@ -99,11 +99,6 @@ h6{
   left:-10px;
 }
 
-.col-sm-4 {
- margin: 0 auto;
- padding-top: 15px;
-
-}
 
 /*-----------EXPERIENCES-----------*/
 
