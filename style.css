@@ -15,14 +15,17 @@ li{
 }
 
 h2 {
-  text-align: center;
-  padding-bottom: 40px;
+  text-align: left;
+  padding-bottom: 20px;
   letter-spacing: 1.2px;
   padding-top: 130px;
+  font-size: 35px;
+  margin: auto;
 }
 
 h3{
   padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 p{
@@ -60,15 +63,16 @@ h1, h2, h3, h4, h5, h6, li, p {
 
 .jumbotron {
   background: linear-gradient(to bottom left, white 0%, white 60%, #d0eeed 40%, #d0eeed 100%);
-  height: 85vh;
+  height: 90vh;
   margin-bottom: 0 !important;
 
 }
 
-.fa-2x{
+.fa-2x, .fa-lg{
   letter-spacing: 15px;
   margin: 0 auto;
 }
+
 
 h1{
   font-size: 4em;
