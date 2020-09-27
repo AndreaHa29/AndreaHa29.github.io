@@ -105,7 +105,9 @@ li{
   list-style: none;
 }
 
-
+.fa-lg {
+  font-size: 1.6em !important;
+}
 
 /*-----------EXPERIENCES-----------*/
 
