@@ -146,7 +146,7 @@ li.timeline-item::before {
 .timeline img{
   margin-left: -5%; 
   padding-top: 20px; 
-  width: 18rem;
+  width: 17rem;
 }
 
 .timeline a img:hover{
