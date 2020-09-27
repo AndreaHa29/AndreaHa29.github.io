@@ -9,11 +9,6 @@ a, a:visited{
   color: black;
 }
 
-li{
-  line-height: 32px;
-  list-style: none;
-}
-
 h2 {
   text-align: left;
   padding-bottom: 20px;
@@ -102,6 +97,14 @@ h6{
   color: #a2dcda;
   left:-10px;
 }
+ .col-md-auto ul{
+  line-height: 32px;
+  list-style: none;
+}
+li{
+  list-style: none;
+}
+
 
 
 /*-----------EXPERIENCES-----------*/
@@ -109,20 +112,19 @@ h6{
 ul.timeline {
   list-style-type: none;
   position: relative;
-  padding-left: 1.5rem;
+  padding-left: 0.5rem;
 }
 
 /* experiences vertical line */
 ul.timeline:before {
   content: ' ';
-  background: #d0eeed;
+  background: #a2dcda;
   display: inline-block;
   position: absolute;
   left: 16px;
-  width: 4px;
+  width: 3px;
   height: 100%;
   z-index: 400;
-  border-radius: 1rem;
 }
 
 /* experiences circle marker */
@@ -132,24 +134,45 @@ li.timeline-item::before {
   display: inline-block;
   position: absolute;
   border-radius: 50%;
-  border: 3px solid #d0eeed;
-  left: 11px;
-  width: 14px;
-  height: 14px;
+  border: 3px solid #a2dcda;
+  left: 9px;
+  width: 17px;
+  height: 17px;
   z-index: 400;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .timeline img{
-  margin-left: -1%; 
-  padding-top: 10px; 
+  margin-left: -5%; 
+  padding-top: 20px; 
   width: 18rem;
 }
 
 .timeline a img:hover{
-  -webkit-transform: scale(1.01);
-  -ms-transform: scale(1.02);
-  transform: scale(1.02);
+opacity: 90%;
+}
+
+h5{
+  font-size: 22px;
+}
+
+
+
+ul.description li::before {
+  content: ' ';
+  background: black;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  left: 57px;
+  width: 5px;
+  height: 5px;
+  z-index: 400;
+  margin: 9px 0px 0px 0px;
+}
+
+ul.description li{
+  margin: 9px 0px 0px -15px;
+  
 }
 
 
